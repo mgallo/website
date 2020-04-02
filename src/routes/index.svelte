@@ -164,10 +164,10 @@
     </div>
     <div class="about" id="about-email">> mgallo[at]linux[dot]com</div>
     <div class="about" id="about-social">
-      <a href="https://github.com/mgallo" target="_blank">
+      <a href="https://github.com/mgallo" rel="noopener" target="_blank">
         <Icon data={github} scale="1.5" />
       </a>
-      <a href="https://twitter.com/mgallo_" target="_blank">
+      <a href="https://twitter.com/mgallo_" rel="noopener" ` target="_blank">
         <Icon data={twitter} scale="1.5" />
       </a>
     </div>
