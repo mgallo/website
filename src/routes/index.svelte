@@ -29,7 +29,7 @@
     "Olá",
     "Hey",
     "Grüß dich",
-    "გამარჯობათ!"
+    "გამარჯობა"
   ];
 
   const salutation =
