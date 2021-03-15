@@ -54,44 +54,6 @@
           scaleX: 1,
           delay: anime.stagger(59, { grid: grid, from: "center" })
         })
-        // .add({
-        //   translateX: anime.stagger(".25rem", {
-        //     grid: grid,
-        //     from: "center",
-        //     axis: "x"
-        //   }),
-        //   translateY: anime.stagger(".25rem", {
-        //     grid: grid,
-        //     from: "center",
-        //     axis: "y"
-        //   }),
-        //   rotate: 0,
-        //   scaleX: 2.5,
-        //   scaleY: 0.25,
-        //   delay: anime.stagger(4, { from: "center" }),
-        //   borderRadius: "50%"
-        // })
-        // .add({
-        //   rotate: anime.stagger([270, 270], { grid: grid, from: "center" }),
-        //   delay: anime.stagger(270, { grid: grid, from: "center" }),
-        //   borderRadius: "0"
-        // })
-        // .add({
-        //   rotate: anime.stagger([360, 360], { grid: grid, from: "center" }),
-        //   delay: anime.stagger(360, { grid: grid, from: "center" })
-        // })
-        // .add({
-        //   rotate: 0,
-        //   scaleX: 1,
-        //   scaleY: 1,
-        //   delay: anime.stagger(4, { from: "center" })
-        // })
-        // .add({
-        //   rotate: 0,
-        //   scaleX: 3.1,
-        //   scaleY: 3.1,
-        //   delay: anime.stagger(4, { from: "center" })
-        // })
         .add({
           translateX: [
             {
@@ -131,17 +93,6 @@
           duration: 1000,
           scale: 1
         });
-      // .add({
-      //   rotate: 90,
-      //   duration: 1000
-      // })
-      // .add({
-      //   rotate: 135,
-      //   duration: 1000,
-      //   backgroundColor: "#fff",
-      //   padding: "1em"
-      // });
-
       animations.play();
     }, 500);
   });
