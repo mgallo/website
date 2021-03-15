@@ -49,7 +49,7 @@
   }
 
   .about {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-delay: 2.5s;
@@ -159,8 +159,12 @@
         <b class="hobbies">Synthesizers</b>
       </div>
       <div class="about">
-        You can download my resume
-        <a href="test">here</a>
+        <div>
+          You can download my resume
+          <a class="no-decoration" href="/MGALLO-resume.pdf" target="blank">
+            here
+          </a>
+        </div>
       </div>
     </div>
     <div class="about" id="about-email">> mgallo[at]linux[dot]com</div>
