@@ -15,7 +15,7 @@
     "Couchbase",
     "MongoDB",
     "PostgresSQL",
-    "CSS"
+    "CSS",
   ];
 
   const salutations = [
@@ -29,12 +29,57 @@
     "Olá",
     "Hey",
     "Grüß dich",
-    "გამარჯობა"
+    "გამარჯობა",
   ];
 
   const salutation =
     salutations[Math.floor(Math.random() * Math.floor(salutations.length))];
 </script>
+
+<svelte:head>
+  <title>Marco Gallo - Personal Website</title>
+</svelte:head>
+
+<div class="content">
+  <div class="about-wrapper">
+    <Square />
+    <div id="hi">
+      <h2>{salutation}!</h2>
+    </div>
+    <div class="about" id="about-intro">
+      I'm Marco, a Full-Stack dev from Pavia/Italy.
+    </div>
+    <div class="about" id="about-work">
+      <div>
+        I work with
+        <b class="technologies">Web Technologies</b>
+      </div>
+    </div>
+    <div class="about" id="about-hobbies">
+      <div>
+        Outside of programming, my favourite tools are
+        <b class="hobbies">Guitars and Synthesizers</b>
+      </div>
+      <div class="about">
+        <div>
+          You can download my resume
+          <a class="no-decoration" href="/MGALLO-resume.pdf" target="blank">
+            here
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about-email">> mgallo[at]linux[dot]com</div>
+    <div class="about" id="about-social">
+      <a href="https://github.com/mgallo" rel="noopener" target="_blank">
+        <Icon data={github} scale="1.5" />
+      </a>
+      <a href="https://twitter.com/mgallo_" rel="noopener" ` target="_blank">
+        <Icon data={twitter} scale="1.5" />
+      </a>
+    </div>
+  </div>
+</div>
 
 <style>
   .content {
@@ -132,50 +177,3 @@
     color: #fff;
   }
 </style>
-
-<svelte:head>
-  <title>Marco Gallo - Personal Website</title>
-</svelte:head>
-
-<div class="content">
-  <div class="about-wrapper">
-    <Square />
-    <div id="hi">
-      <h2>{salutation}!</h2>
-    </div>
-    <div class="about" id="about-intro">
-      I'm Marco, a Full-Stack dev from Pavia/Italy.
-    </div>
-    <div class="about" id="about-work">
-      <div>
-        I work with
-        <b class="technologies">{technologies[showingTechnology]}</b>
-      </div>
-      <div>to create great solutions for browsers and mobile devices</div>
-    </div>
-    <div class="about" id="about-hobbies">
-      <div>
-        Outside of programming, I like
-        <b class="hobbies">Synthesizers</b>
-      </div>
-      <div class="about">
-        <div>
-          You can download my resume
-          <a class="no-decoration" href="/MGALLO-resume.pdf" target="blank">
-            here
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="about" id="about-email">> mgallo[at]linux[dot]com</div>
-    <div class="about" id="about-social">
-      <a href="https://github.com/mgallo" rel="noopener" target="_blank">
-        <Icon data={github} scale="1.5" />
-      </a>
-      <a href="https://twitter.com/mgallo_" rel="noopener" ` target="_blank">
-        <Icon data={twitter} scale="1.5" />
-      </a>
-    </div>
-  </div>
-
-</div>
