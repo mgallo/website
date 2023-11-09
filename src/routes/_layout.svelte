@@ -1,3 +1,7 @@
+<main>
+  <slot />
+</main>
+
 <style>
   main {
     -webkit-overflow-scrolling: touch;
@@ -10,19 +14,12 @@
     -ms-flex-align: center;
     align-items: center;
     overflow-y: scroll;
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: box;
     display: flex;
-    bottom: 50px;
-    right: 0;
-    left: 0;
-    top: 4rem;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
   }
 </style>
-
-<main>
-  <slot />
-</main>
