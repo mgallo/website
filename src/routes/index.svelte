@@ -62,8 +62,12 @@
       </div>
       <div class="about">
         <div>
-          You can download my resume
-          <a class="no-decoration" href="/MGALLO-resume.pdf" target="blank">
+          You can see my resume
+          <a
+            class="no-decoration"
+            href="https://standardresume.co/r/mgallo"
+            target="blank"
+          >
             here
           </a>
         </div>
